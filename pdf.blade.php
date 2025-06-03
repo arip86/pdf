@@ -60,9 +60,7 @@
     
     
     <div class="content">
-    <center>
-    <img src="{{public_path('admin/img/Lambang.png')}}" width="90px" alt="">
-    </center>
+
         <p align="center">SURAT PERINTAH<br>
         Nomor Surat Tugas {{$tugas->no_surat}}</p>
         {!! html_entity_decode($tugas->menimbang) !!}
@@ -83,15 +81,7 @@
         {{$tugas->pimpinan}}<br>
         {{$tugas->pangkat}}
     </div>
-        <p>Tembusan:</p>
-        <ol>
-           @foreach($tembusan as $t)
-            <li>{{$t->jabatan}}</li>
-            @endforeach
-           
-            
-           
-        </ol>
+       
     </div>
 
    
